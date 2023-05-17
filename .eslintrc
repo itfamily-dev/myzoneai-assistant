@@ -1,0 +1,8 @@
+{
+    "extends": "airbnb",
+    "rules": {
+        // Override our default settings just for this directory
+        "indent": ["error", 4],
+        "linebreak-style": ["error", "windows"],
+    }
+}

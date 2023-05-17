@@ -1,0 +1,20 @@
+.header {
+	background: transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 500;
+	padding: 44px 0;
+
+	@include breakpoint($to: tablet) {
+		padding: 20px 0;
+	}
+
+
+	&__logo {
+		display: block;
+		width: 186px;
+		height: 55px;
+	}
+}

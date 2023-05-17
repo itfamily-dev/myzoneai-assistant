@@ -1,0 +1,30 @@
+.resp-menu {
+	background-color: #fff;
+	position: fixed;
+	right: -100%;
+	width: 100%;
+	left: auto;
+	z-index: 6000;
+	transition: 0.3s ease-in-out;
+	justify-content: center;
+	align-items: center;
+	bottom: 0;
+	top: 0;
+	padding: $spacing-unit * 2;
+
+	.resp-buttons {
+		position: absolute;
+		right: 4px;
+		top: 9px;
+
+		.menu-toggle__lines,
+		.menu-toggle__lines::after,
+		.menu-toggle__lines::before {
+			background: getColor(primary);
+		}
+	}
+
+	.menu-open & {
+		transform: translateX(-100%);
+	}
+}

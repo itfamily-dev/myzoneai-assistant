@@ -1,0 +1,100 @@
+/* Helpers */
+
+.text {
+	&-center {
+		text-align: center;
+	}
+
+	&-left {
+		text-align: left;
+	}
+
+	&-right {
+		text-align: right;
+	}
+
+	&-justify {
+		text-align: justify;
+	}
+
+	&-uppercase {
+		text-transform: uppercase;
+	}
+
+	&-lowercase {
+		text-transform: lowercase;
+	}
+
+	&-capitalize {
+		text-transform: capitalize;
+	}
+}
+
+.font {
+	&-thin {
+		font-weight: 100;
+	}
+
+	&-light {
+		font-weight: 300;
+	}
+
+	&-regular {
+		font-weight: 400;
+	}
+
+	&-medium {
+		font-weight: 500;
+	}
+
+	&-semibold {
+		font-weight: 600;
+	}
+
+	&-bold {
+		font-weight: 700;
+	}
+
+	&-black {
+		font-weight: 900;
+	}
+}
+
+
+// For loop that generates margin classes
+@for $i from 1 through 6 {
+
+	// Margin classes
+	.mt-#{$i} {
+		margin-top: $spacing-unit * $i;
+	}
+
+	.mb-#{$i} {
+		margin-bottom: $spacing-unit * $i;
+	}
+
+	.ml-#{$i} {
+		margin-left: $spacing-unit * $i;
+	}
+
+	.mr-#{$i} {
+		margin-right: $spacing-unit * $i;
+	}
+
+	// Paddings classes
+	.pt-#{$i} {
+		padding-top: $spacing-unit * $i;
+	}
+
+	.pb-#{$i} {
+		padding-bottom: $spacing-unit * $i;
+	}
+
+	.pl-#{$i} {
+		padding-left: $spacing-unit * $i;
+	}
+
+	.pr-#{$i} {
+		padding-right: $spacing-unit * $i;
+	}
+}

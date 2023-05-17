@@ -1,0 +1,30 @@
+.page-template-styleguide {
+	.gsap-demo {
+		height: 2000px;
+
+		.gsap-box {
+			height: 400px;
+			margin: 50px;
+
+			&--1 {
+				background: yellowgreen;
+			}
+
+			&--2 {
+				background: red;
+			}
+
+			&--3 {
+				background: orange;
+			}
+
+			&--4 {
+				background: blue;
+			}
+
+			&--5 {
+				background: black;
+			}
+		}
+	}
+}

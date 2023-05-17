@@ -1,0 +1,51 @@
+.hero {
+	overflow: hidden;
+	position: relative;
+	padding: 30px 0 0;
+
+	&__image {
+		width: 946px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		bottom: 0;
+		right: 0;
+		z-index: 1;
+
+		@include breakpoint($to: desktop) {
+			width: 700px;
+			bottom: 0;
+			top: auto;
+			transform: none;
+		}
+	}
+
+	&__text {
+		max-width: 522px;
+
+		@include breakpoint($to: desktop) {
+			padding-top: 100px;
+		}
+	}
+
+	&__subtitle {
+		line-height: 1.2;
+	}
+
+	&__paragraph {
+		max-width: 470px;
+	}
+
+	.wrapper {
+		z-index: 100;
+		min-height: 640px;
+		display: flex;;
+		position: relative;
+		z-index: 10;
+
+		@include breakpoint(desktop) {
+			min-height: 740px;
+			align-items: center;
+		}
+	}
+}

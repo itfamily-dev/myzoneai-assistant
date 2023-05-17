@@ -1,0 +1,44 @@
+.products {
+	position: relative;
+	z-index: 100;
+	background: #F6F8FF;
+	padding: 60px 0;
+
+	@include breakpoint(desktop) {
+		padding: 120px 0;
+	}
+
+	&__container {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 30px;
+		margin-top: 30px;
+
+		@include breakpoint(mobile) {
+			margin-top: 50px;
+			grid-template-columns: 1fr 1fr ;
+			gap: 30px;
+		}
+		@include breakpoint(desktop) {
+			margin-top: 50px;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			gap: 30px;
+		}
+	}
+
+	&__text {
+		max-width: 427px;
+	}
+
+	&__title {
+		line-height: 1.2;
+	}
+
+	&__title,
+	&__subtitle {
+
+		@include breakpoint($to: tablet) {
+			text-align: center;
+		}
+	}
+}

@@ -1,0 +1,56 @@
+.form {
+	position: relative;
+	z-index: 100;
+	background: #172CE6;
+	padding: 60px 0;
+	position: relative;
+	overflow: hidden;
+
+	@include breakpoint(desktop) {
+		padding: 120px 0;
+	}
+
+	&__title {
+		font-weight: 900;
+		line-height: 1.2;
+	}
+
+	&__form {
+		margin-left: -20px;
+		margin-right: -14px;
+	}
+	&__image {
+		position: absolute;
+		width: 666px;
+		height: 640px;
+		right: 0;
+		bottom: -10px;
+		z-index: 1;
+	}
+
+	&__container {
+		display: grid;
+		grid-template-columns: 323px 1fr;
+		background: #FFFFFF;
+		gap: 10%;
+		box-shadow: 0px 40px 80px rgba(0, 0, 0, 0.03);
+		border-radius: 20px;
+		padding: 85px 75px;
+		position: relative;
+		z-index: 10;
+
+		@include breakpoint($to: desktop) {
+			grid-template-columns: 1fr;
+			padding: 40px 60px;
+			gap: 32px;
+		}
+
+		@include breakpoint($to: mobile) {
+			padding: 30px;
+		}
+	}
+
+	iframe {
+		min-height: 0 !important;
+	}
+}

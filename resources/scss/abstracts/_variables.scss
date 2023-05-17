@@ -1,0 +1,86 @@
+/* Breakpoints */
+$breakpoints: (
+	small: 440px,
+	mobile: 640px,
+	tablet: 768px,
+	desktop: 1024px,
+	large: 1340px,
+);
+
+/* Colors */
+$colors: (
+	primary: #171EE6,
+	secondary: #cbeddc,
+	dark: #252C39,
+	light: #fff,
+	grey-100: #f8f9fa,
+	grey-200: #e9ecef,
+	grey-300: #dee2e6,
+	grey-400: #ced4da,
+	grey-500: #adb5bd,
+);
+
+// take $colors array and create CSS variables from it on the :root and also helper classes
+@each $name, $color in $colors {
+	:root {
+		--color-#{$name}: #{$color};
+	}
+
+	.color-#{'' + $name} {
+		color: $color;
+	}
+
+	.background-#{'' + $name} {
+		background-color: $color;
+	}
+}
+
+
+/* Typography */
+$font_family: 'elza', sans-serif;
+
+$heading_sizes: (
+	'h1': (
+		'min': 40px,
+		'max': 60px,
+	),
+	'h2': (
+		'min': 28px,
+		'max': 40px,
+	),
+	'h3': (
+		'min': 20px,
+		'max': 30px,
+	),
+
+	'h4': (
+		'min': 18px,
+		'max': 22px,
+	),
+
+	'h5': (
+		'min': 16px,
+		'max': 20px,
+	),
+
+	'h6': (
+		'min': 16px,
+		'max': 18px,
+	),
+) !default;
+
+/* Spacings */
+$spacing-unit: 8px;
+$spacing-grid: $spacing-unit * 4;
+
+/* For loop that generates z-indexes in 10s */
+@for $i from 1 through 10 {
+	// Modal - 50
+    // Resp Menu - 40
+	// Header - 30
+	// Above content - 20
+	// Content - 10
+	.z-#{$i * 10} {
+		z-index: $i * 10;
+	}
+}

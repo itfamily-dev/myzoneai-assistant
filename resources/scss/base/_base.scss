@@ -1,0 +1,29 @@
+/* Base */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-overflow-scrolling: touch;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background: linear-gradient(180deg, rgba(248, 248, 248, 0) 0%, #F8F8F8 100%);
+}
+
+img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	display: block;
+}
