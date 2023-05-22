@@ -9,9 +9,9 @@ $breakpoints: (
 
 /* Colors */
 $colors: (
-	primary: #171EE6,
+	primary: #3361FF,
 	secondary: #cbeddc,
-	dark: #252C39,
+	dark: #353E4F,
 	light: #fff,
 	grey-100: #f8f9fa,
 	grey-200: #e9ecef,
@@ -42,20 +42,20 @@ $font_family: 'elza', sans-serif;
 $heading_sizes: (
 	'h1': (
 		'min': 40px,
-		'max': 60px,
+		'max': 55px,
 	),
 	'h2': (
 		'min': 28px,
 		'max': 40px,
 	),
 	'h3': (
-		'min': 20px,
-		'max': 30px,
+		'min': 22px,
+		'max': 32px,
 	),
 
 	'h4': (
-		'min': 18px,
-		'max': 22px,
+		'min': 20px,
+		'max': 24px,
 	),
 
 	'h5': (

@@ -12,6 +12,10 @@
 		max-width: calc(1920px + $spacing-grid * 2);
 	}
 
+	&--medium {
+		max-width: calc(1024px + $spacing-grid * 2);
+	}
+
 	&--narrow {
 		max-width: calc(900px + $spacing-grid * 2);
 	}

@@ -2,8 +2,17 @@
 <html class="no-js" lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJYQTM0FLG"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MJYQTM0FLG');
+    </script>
     <meta charset="utf-8">
-    <title>MyZone AI</title>
+    <title>AI Assistant</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon.png">
     <link rel="stylesheet" href="build/frontend.css">
@@ -15,132 +24,97 @@
     <header class="header">
         <div class="wrapper">
             <a href="#" class="header__logo">
-                <img  src="./assets/images/myzone-logo-ai.svg" alt="MyZone AI logo">
+                <img  src="./assets/images/ai-assistant-logo.svg" alt="MyZone AI logo">
             </a>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="wrapper">
-            <div class="hero__text">
-                <p class="paragraph-large hero__subtitle">Embrace the Future of Business with</p>
-                <h1 class="font-black">AI Wake-up Call </h1>
-                <p class="paragraph-large hero__paragraph">Join the MyZone AI Wake-up call webinar. Understand and leverage AI. Learn from experts, prepare your workforce for the AI era, and propel your business into the future.</p>
-                <a href="#sign-up" class="c-button c-button--primary">Sign Up Now</a>
-            </div>
-        </div>
-        <div>
-            <img src="./assets/images/earth.png" alt="Earth" class="hero__image">
-        </div>
-    </section>
-
-    <section class="products">
-        <div class="wrapper">
-            <div class="products__text">
-                <h2 class="products__title font-black">The MyZone AI <br> Webinar Advantage</h2>
-                <p class="paragraph-large products__subtitle">What You Gain from Our AI Wake-up Call Webinar</p>
-            </div>
-            <div class="products__container">
-                <article class="product-card">
-                    <p class="product-card__category">Unlock the Power of AI</p>
-                    <h4 class="product-card__title">Actionable Insights</h4>
-                    <div class="product-card__description">
-                        Discover the potential of AI in our hands-on webinar. Harness AI to drive innovation and optimize business operations.
-                    </div>
-                </article>
-                <article class="product-card">
-                    <p class="product-card__category">Navigating the AI Revolution</p>
-                    <h4 class="product-card__title">Hands-on Guidance</h4>
-                    <div class="product-card__description">
-                        Foster an AI-ready culture and effective collaboration. Gain insights to tackle AI challenges.
-                    </div>
-                </article>
-                <article class="product-card">
-                    <p class="product-card__category">AI Integration Path</p>
-                    <h4 class="product-card__title">Strategic Roadmap</h4>
-                    <div class="product-card__description">
-                        Equip your team to navigate the AI era. Learn to manage talent development, ethical concerns, and foster an exponential mindset.
-                    </div>
-                </article>
-                <article class="product-card">
-                    <p class="product-card__category">Join the AI Vanguard</p>
-                    <h4 class="product-card__title">Exclusive Network</h4>
-                    <div class="product-card__description">
-                        Connect with a network of professionals and experts. Collaborate and stay updated with AI advancements.
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="image-text">
-        <div class="wrapper">
-            <div>
-                <img src="./assets/images/graphic.png" alt="Earth" class="image-text__image">
-            </div>
-            <div class="image-text__text">
-                <h2 class="font-black">Who is the MyZone AI Wake-up Call Webinar for?</h2>
-                <p class="paragraph-large image-text__paragraph">Whether you're a business leader eager to drive innovation, an HR professional planning talent development for the AI era, or a tech enthusiast keen on staying ahead of AI advancements, this webinar is tailored for you.</p>
-            </div>
-        </div>
-    </section>
-
     <div class="video-banner color-light background-primary">
-        <video class="video-banner__video" src="./assets/videos/intros-background.mp4" autoplay playsinline muted loop></video>
+        <video class="video-banner__bg" src="./assets/videos/intros-background.mp4" autoplay playsinline muted loop></video>
         <div class="wrapper">
-            <div class="video-banner__content text-center">
-                <h2 class="font-black">Ready to Future-proof Your Business?</h2>
-                <p class="paragraph-large mt-2">Don’t miss this opportunity to equip your organization with the tools, strategies, and insights to thrive in the AI-driven world. Sign up today for the MyZone AI Webinar and take a decisive step towards a future of innovation and growth.</p>
-                <a href="#sign-up" class="c-button c-button--light mt-2">Sign Up Today</a>
+            <div class="video-banner__content">
+                <img class="video-banner__icon mb-1" width="58" height="57" src="./assets/images/assistant.svg" alt="AI Assistant icon">
+                <h1 class="font-black">Unleash the Power of AI for Your Business</h1>
+                <p class="paragraph-large mt-2">Streamline work, get instant answers, generate content, and receive AI-driven recommendations with you personal AI assistants.</p>
+                <a href="#sign-up" class="c-button c-button--primary mt-2">Sign up for Beta</a>
+            </div>
+            <div class="video-banner__video">
+                <video src="./assets/videos/video-3.mp4" class="video-banner__video-el" playsinline autoplay loop muted></video>
             </div>
         </div>
     </div>
 
-    <div class="details text-center">
-        <div class="wrapper">
-            <h2 class="font-black">MyZone AI Webinar Details</h2>
+    <div class="details">
+        <div class="wrapper wrapper--medium">
+            <h2 class="font-black text-center">Discover the Possibilities with AI Assistants</h2>
+            <p class="text-center paragraph-large">Explore the diverse range of tasks and solutions our AI-powered chatbots can accomplish for your business.</p>
             <div class="details__container">
                 <div class="details-card">
-                    <p class="details-card__subtitle">Duration</p>
-                    <h3>120 min</h3>
-                    <p class="mt-3">Engaging and insightful discussions.</p>
+                    <h4 class="details-card__subtitle">Enchance your Customer Support</h4>
+                    <p class="mt-3">Enhance your customer experience with fast, accurate, and personalized AI-driven support, automating responses to common inquiries and reducing wait times</p>
                 </div>
                 <div class="details-card">
-                    <p class="details-card__subtitle">Mode</p>
-                    <h3>Zoom</h3>
-                    <p class="mt-3">Participate from the comfort of your home or office.</p>
+                    <h4 class="details-card__subtitle">Improve eCommerce conversion rates</h4>
+                    <p class="mt-3">Transform your eCommerce platform with AI-powered shopping assistants, guiding customers through their journey, offering personalized recommendations, and simplifying the buying process.</p>
                 </div>
                 <div class="details-card">
-                    <p class="details-card__subtitle">Group Size</p>
-                    <h3>25</h3>
-                    <p class="mt-3">Personalized interaction and effective learning</p>
+                    <h4 class="details-card__subtitle">Create better content</h4>
+                    <p class="mt-3">Boost team productivity with custom AI marketing assistants, trained on your unique data. Generate personalized content in a unified tone of voice and enjoy unmatched efficiency.</p>
                 </div>
                 <div class="details-card">
-                    <p class="details-card__subtitle">Price</p>
-                    <h3>$2499</h3>
-                    <p class="mt-3">Invest today for tomorrow's success.</p>
+                    <h4 class="details-card__subtitle">Augment your workflows</h4>
+                    <p class="mt-3">Streamline employee onboarding and promote a better understanding of company processes with AI assistants, making it easier for new hires and existing employees to adapt and contribute to the organization. </p>
                 </div>
             </div>
         </div>
-        <div class="wrapper wrapper--narrow">
-            <div class="details__section">
-                <h3 class="mt-5 mb-4 font-black">Webinar Hosts</h3>
-                <div class="details__hosts">
-                    <div class="details__host">
-                        <img src="./assets/images/mike-scwarz.png" alt="Mike Schwarz">
-                        <h6 class="details__host-title">Mike Schwarz</h6>
-                        <p>CEO, MyZone Marketing</p>
-                    </div>
-                    <div class="details__host">
-                        <img src="./assets/images/andrej-simunaj.png" alt="Andrej Simunaj">
-                        <h6 class="details__host-title">Andrej Šimunaj</h6>
-                        <p>CTO, MyZone Software</p>
-                    </div>
-                    <div class="details__host">
-                        <img src="./assets/images/jeanette-tran.png" alt="Jeanette Tran">
-                        <h6 class="details__host-title">Jeanette Tran</h6>
-                        <p>Coach, MyZone Mastery</p>
-                    </div>
+    </div>
+
+    <div class="content-with-embed color-white">
+        <img class="content-with-embed__bg" src="./assets/images/grey-bg.png" alt="Graphic Earth">
+        <div class="wrapper wrapper--medium">
+            <div class="content-with-embed__content">
+                <h2>Experience AI Assistants in action</h2>
+                <p>Ask it anything about our AI Assistants tool – it's here to help you understand how it works, the use cases it can tackle, and so much more. Give it a whirl and let our AI Assistant "chat" your way to success!</p>
+                <a href="#" class="c-button c-button--primary mt-2">Sign up for Beta</a>
+            </div>
+            <div class="content-with-embed__embed">
+                <iframe src="https://ai-assistant.myzone.tech/embed/clhkjsfg50010mc0kosruun86" width="600" height="600" style="border: none;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="steps">
+        <div class="wrapper">
+            <div class="steps__intro">
+                <h2 class="font-black">How it works</h2>
+                <p class="paragraph-large">Simple & easy to use, fast set up that gets you going in minutes! Like ChatGPT on steroids, trained on your custom set of data and configured to reply exactly as you need it</p>
+            </div>
+            <div class="steps__step">
+                <img src="./assets/images/assistant-1.png" alt="Step 1 Create" class="steps__step-image">
+                <div class="steps__step-content">
+                    <h3 class="steps__step-title"><span>1</span>Create</h3>
+                    <p>Design your custom AI chatbot with our user-friendly interface, selecting the desired features and appearance to suit your business needs.</p>
+                </div>
+            </div>
+            <div class="steps__step">
+                <img src="./assets/images/assistant-2.png" alt="Step 1 Create" class="steps__step-image">
+                <div class="steps__step-content">
+                    <h3 class="steps__step-title"><span>2</span>Train</h3>
+                    <p>Provide your AI chatbot with training data, such as website URLs and documents, to ensure it understands your business and can effectively assist users.</p>
+                </div>
+            </div>
+            <div class="steps__step">
+                <img src="./assets/images/assistant-3.png" alt="Step 1 Create" class="steps__step-image">
+                <div class="steps__step-content">
+                    <h3 class="steps__step-title"><span>3</span>Configure</h3>
+                    <p>Fine-tune your chatbot's output settings, such as tone of voice and prompt augmentation, to align with your brand's voice and style.</p>
+                </div>
+            </div>
+            <div class="steps__step">
+                <img src="./assets/images/assistant-4.png" alt="Step 1 Create" class="steps__step-image">
+                <div class="steps__step-content">
+                    <h3 class="steps__step-title"><span>4</span>Deploy</h3>
+                    <p>Easily embed your AI chatbot on your website or platform using our provided script, and start enjoying the benefits of automated support and streamlined processes.</p>
                 </div>
             </div>
         </div>
@@ -148,38 +122,71 @@
 
     <div class="testimonials">
         <div class="wrapper">
-            <h3 class="font-black text-center mb-5">Success Stories From Our Webinar Attendees</h3>
-            <div class="testimonials__container">
-                <div class="testimonials__card">
-                    <p>“MyZone's AI Webinar gave us the tools to innovate and stay competitive. A game-changer for our business.”</p>
-                    <div class="testimonials__card-footer">
-                        <img src="./assets/images/john-d.png" alt="John D">
-                        <div>
-                            <p><strong>John D.</strong></p>
-                            <p>CEO of TechSolutions</p>
+            <h3 class="font-black text-center mb-5">Testimonials</h3>
+            <div class="swiper testimonials__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonials__card">
+                            <p>“Implementing the AI chatbot assistant from MyZone has been a game-changer for our customer support. It has significantly reduced response times and provided personalized assistance, leading to higher customer satisfaction. Our support team is now more efficient and can focus on complex queries while the chatbot handles routine tasks seamlessly.”</p>
+                            <div class="testimonials__card-footer">
+                                <img src="./assets/images/john-d.png" alt="John D">
+                                <div>
+                                    <p><strong>John Anderson</strong></p>
+                                    <p>CEO of TechSolutions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonials__card">
+                            <p>“Implementing the AI chatbot assistant from MyZone has been a game-changer for our customer support. It has significantly reduced response times and provided personalized assistance, leading to higher customer satisfaction. Our support team is now more efficient and can focus on complex queries while the chatbot handles routine tasks seamlessly.”</p>
+                            <div class="testimonials__card-footer">
+                                <img src="./assets/images/maria-s.png" alt="Maria">
+                                <div>
+                                    <p><strong>Maria S.</strong></p>
+                                    <p>CEO of TechSolutions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonials__card">
+                            <p>“Implementing the AI chatbot assistant from MyZone has been a game-changer for our customer support. It has significantly reduced response times and provided personalized assistance, leading to higher customer satisfaction. Our support team is now more efficient and can focus on complex queries while the chatbot handles routine tasks seamlessly.”</p>
+                            <div class="testimonials__card-footer">
+                                <img src="./assets/images/alex-p.png" alt="Alex P.">
+                                <div>
+                                    <p><strong>John D.</strong></p>
+                                    <p>CTO at FutureTech</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonials__card">
+                            <p>“Implementing the AI chatbot assistant from MyZone has been a game-changer for our customer support. It has significantly reduced response times and provided personalized assistance, leading to higher customer satisfaction. Our support team is now more efficient and can focus on complex queries while the chatbot handles routine tasks seamlessly.”</p>
+                            <div class="testimonials__card-footer">
+                                <img src="./assets/images/alex-p.png" alt="Alex P.">
+                                <div>
+                                    <p><strong>John D.</strong></p>
+                                    <p>CTO at FutureTech</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonials__card">
+                            <p>“Implementing the AI chatbot assistant from MyZone has been a game-changer for our customer support. It has significantly reduced response times and provided personalized assistance, leading to higher customer satisfaction. Our support team is now more efficient and can focus on complex queries while the chatbot handles routine tasks seamlessly.”</p>
+                            <div class="testimonials__card-footer">
+                                <img src="./assets/images/alex-p.png" alt="Alex P.">
+                                <div>
+                                    <p><strong>John D.</strong></p>
+                                    <p>CTO at FutureTech</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="testimonials__card">
-                    <p>“An informative and engaging journey into AI. The knowledge I gained is already making a difference at our organization.” </p>
-                    <div class="testimonials__card-footer">
-                        <img src="./assets/images/maria-s.png" alt="Maria">
-                        <div>
-                            <p><strong>Maria S.</strong></p>
-                            <p>CEO of TechSolutions</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonials__card">
-                    <p>“This webinar demystified AI for us and provided clear, actionable steps for integration. Highly recommended!”</p>
-                    <div class="testimonials__card-footer">
-                        <img src="./assets/images/alex-p.png" alt="Alex P.">
-                        <div>
-                            <p><strong>John D.</strong></p>
-                            <p>CTO at FutureTech</p>
-                        </div>
-                    </div>
-                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>
@@ -188,43 +195,64 @@
         <div class="wrapper">
             <div class="form__container">
                 <div class="form__info">
-                    <h2 class="form__title">Join the MyZone AI Wake-up Call Webinar</h2>
-                    <p class="font-semibold">Lead Your Organization into the AI Era</p>
-                    <p>The MyZone AI Webinar is more than just a learning session - it's a launchpad for your organization's success in the AI era.</p>
-                    <p>Our experts guide you, our insights empower you, and our community inspires you. Join us today and lead your organization into the AI era with confidence.</p>
+                    <h3 class="form__title mb-2">Secure Your Spot on the AI Assistants Waitlist</h3>
+                    <p>Don't miss out on the opportunity to revolutionize your business with our cutting-edge AI chatbot solutions. Join the waitlist today!</p>
                 </div>
                 <div class="form__form">
-                    <script src="https://form.jotform.com/jsform/231097658906366"></script>
+                    <script type="text/javascript" src="https://form.jotform.com/jsform/231370326440345"></script>
                 </div>
             </div>
         </div>
-        <img class="form__image" src="./assets/images/graphic-2.png" alt="Graphic Earth">
+        <img class="form__image" src="./assets/images/blue-bg.png" alt="Graphic Earth">
     </div>
 
-    <div class="cards">
-        <div class="wrapper">
-            <a href="https://www.myzonemastery.com/" class="card">
-                <img class="card__logo" src="./assets/images/myzone-logo-mastery.svg" alt="Myzone Master Logo">
-                <p class="card__text">Helping small businesses embrace the power of exponential thinking to unlock their full potential.</p>
-                <span class="font-semibold color-primary mt-3" >Find out more</span>
-            </a>
-            <a href="https://myzonemarketing.com/" class="card">
-                <img class="card__logo" src="./assets/images/myzone-logo-marketing.svg" alt="Myzone Marketing Logo">
-                <p class="card__text">Full service agency helping small businesses scale up since 2001.</p>
-                <span class="font-semibold color-primary mt-3" >Find out more</span>
-            </a>
-            <a href="https://myzone.com/web-design/" class="card">
-                <img class="card__logo" src="./assets/images/myzone-logo-software.svg" alt="Myzone Software Logo">
-                <p class="card__text">Custom web design & development solutions that help your business grow.</p>
-                <span class="font-semibold color-primary mt-3" >Find out more</span>
-            </a>
-        </div>
-    </div>
 
     <footer class="footer">
         <div class="wrapper">
-            <img src="./assets/images/myzone-logo-dark.svg" alt="MyZone Logo" class="footer__logo">
-            <p class="footer__text">MyZone Labs Ltd. © 2002-2023</p>
+            <div class="footer__top">
+                <img src="./assets/images/myzone-logo-dark.svg" alt="MyZone Logo" class="footer__logo">
+                <div class="footer__menu">
+                    <a class="footer__menu-link" href="#">MyZone.ai</a>
+                    <a class="footer__menu-link" href="#">Contact</a>
+                    <ul class="social">
+                        <li>
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="./build/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="./build/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="./build/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="./build/sprite.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <ul class="footer__bottom-menu">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+                <p class="footer__text">MyZone Labs Ltd. © 2002-2023</p>
+            </div>
         </div>
     </footer>
 

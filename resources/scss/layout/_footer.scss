@@ -1,13 +1,7 @@
 .footer {
-	margin-top: 100px;
-	padding: 50px 0;
+	padding: 25px 0;
 	color: var(--color-dark);
 	background: #fff;
-
-	@include breakpoint($to: mobile) {
-		padding: 30px 0;
-		margin-top: 50px;
-	}
 
 	&__logo {
 		width: 128px;
@@ -15,19 +9,83 @@
 		display: block;
 	}
 
-	.wrapper {
+	&__menu {
+		display: flex;
+		gap: 23px;
+		align-items: center;
+
+		&-link {
+			color: var(--color-dark);
+			display: inline-block;
+			font-weight: 500;
+			font-size: 16px;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&__bottom {
+		margin-top: 50px;
+		color: #A1A4AA;
+		font-size: 14px;
+		font-weight: 500;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 
-		@include breakpoint($to: small) {
+		@include breakpoint($to: mobile) {
 			flex-direction: column;
+		}
+
+		&-menu {
+			display: flex;
+			gap: 18px;
+			list-style: none;
 			align-items: center;
-			gap: 16px;
+			margin: 0;
+		}
+
+		a {
+			color: #A1A4AA;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.social {
+		display: flex;
+		gap: 18px;
+		list-style: none;
+		align-items: center;
+
+		a {
+			display: block;
+			line-height: 1;
+		}
+
+		svg {
+			width: 18px;
+			height: 18px;
+		}
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include breakpoint($to: mobile) {
+			flex-direction: column;
+			gap: 20px;
 		}
 	}
 
 	&__text {
-		color: var(--color-dark);
-		font-size: 15px;
+		color: #A1A4AA;
+		font-size: 14px;
 	}
 }

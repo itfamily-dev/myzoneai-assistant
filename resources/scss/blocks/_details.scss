@@ -18,9 +18,8 @@
 			gap: 30px;
 		}
 		@include breakpoint(desktop) {
-			margin-top: 50px;
-			grid-template-columns: 1fr 1fr 1fr 1fr;
-			gap: 30px;
+			margin-top: 80px;
+			gap: 80px;
 		}
 	}
 
@@ -28,57 +27,27 @@
 		background: #FFFFFF;
 		box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.03);
 		border-radius: 10px;
-		padding: 32px 26px;
+		padding: 32px 50px;
 
-		h3 {
-			@include fluid-type(320px, 1920px, 25px, 35px);
+		@include breakpoint($to: mobile) {
+			padding: 32px;
 		}
 
 		&__subtitle {
 			position: relative;
 			margin-bottom: 50px;
-			font-weight: 700;
-			letter-spacing: 0.05em;
-			text-transform: uppercase;
+			font-weight: 900;
 
 			&:after {
-				width: 100px;
-				height: 2px;
+				width: 54px;
+				height: 4px;
 				background: var(--color-primary);
 				content: '';
 				position: absolute;
-				bottom: -15px;
-				left: 50%;
-				transform: translateX(-50%);
+				bottom: -37px;
+				left: 0;
+				border-radius: 70px 70px 70px 0px;
 			}
 		}
-	}
-
-	&__hosts {
-		display: grid;
-		grid-template-columns: 1fr;
-		gap: 30px;
-
-		@include breakpoint(mobile) {
-			grid-template-columns: 1fr 1fr 1fr;
-		}
-	}
-
-	&__host {
-
-		&-title {
-			margin-bottom: 6px;
-		}
-
-		img {
-			height: 168px;
-			width: auto;
-			margin: 14px auto;
-			filter: drop-shadow(0px 30px 50px rgba(54, 54, 54, 0.1)) ;
-		}
-	}
-
-	&__section {
-		margin-top: 75px;
 	}
 }

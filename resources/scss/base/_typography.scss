@@ -30,9 +30,8 @@ h4,
 h5,
 h6 {
 	font-weight: 700;
-	line-height: 1.5;
+	line-height: 1.1;
 	margin: 0 0 $spacing-unit;
-	letter-spacing: -0.02em;
 
 	&:last-child {
 		margin-bottom: 0;
@@ -46,13 +45,11 @@ h6 {
 .paragraph-large {
 	@include fluid-type(320px, 1920px, 16px, 20px);
 	line-height: 1.5;
-	letter-spacing: -0.01em;
 }
 
 .paragraph-medium {
 	@include fluid-type(320px, 1920px, 16px, 18px);
 	line-height: 1.45;
-	letter-spacing: -0.02em
 }
 
 

@@ -42,6 +42,8 @@
   "dependencies": {
     "-": "^0.0.1",
     "D": "^1.0.0",
-    "svg-spritemap-webpack-plugin": "^4.4.0"
+    "svg-spritemap-webpack-plugin": "^4.4.0",
+    "svg4everybody": "^2.1.9",
+    "swiper": "^9.3.2"
   }
 }
